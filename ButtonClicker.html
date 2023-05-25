@@ -10,18 +10,26 @@
     </style>
 </head>
 <body>
+    
     <h1>Button clicker</h1>
+    
     <p id = "text1">click the button ...</p>
+    
     <button id = "button1">click me 1</button>
+    
     <p id = "text2">now click this button ...</p>
+    
     <button id = "button2">click me 2</button>
+    
+    
     <script>
         /**
          * It's time to introduce JavaScript. For now, we'll think of JavaScript as a language that attaches itself
          * to an HTML file, although this will change in the future. JavaScript's main use will be in lending
          * interactivity to a site. Primarily, JavaScript will be used to manipulate elements in the DOM - the DOM,
-         * standing for document-object-model, is the logical tree representation of all elements on the site. Namely,
-         * in the code below, the elements with id 'text1' and 'button1' are retrieved from the DOM. You may notice that
+         * standing for document-object-model, is the logical tree representation of all elements on the site.
+         * 
+         * Namely, in the code below, the elements with id 'text1' and 'button1' are retrieved from the DOM. You may notice that
          * these variables are defined with 'var.' Defining types are not required in JavaScript, which we'll get to
          * later. When the event 'onclick' occurs for button1, the function 'button1clicked' is executed - this works
          * because the function 'button1click' is actually being passed as a variable - already JavaScript is quite
@@ -33,13 +41,26 @@
          * TODO: your next task is to replicate this functionality for button2, such that the text 'now click this button'
          * is changed to 'button 2 clicked' when button2 is clicked.
          */
+
+
+        /* Here, we are getting the button1 HTML element as a JavaScript object  */
         var button1 = document.getElementById("button1");
-        var text1 = document.getElementById("text1")
+        
+        /* Here, we are adding a click event to button1; our custom logic for this
+            event will be defined later in a function called "button1clicked" */
         button1.onclick = button1clicked;
+
+        /* Here, we are getting the text1 HTML element as a JavaScript object */
+        var text1 = document.getElementById("text1")
+        
+        /* Here, we are defining the click event's logic that will be performed when the button is clicked */
         function button1clicked() {
             text1.innerText = "button 1 clicked"
         }
+
         //    start coding here
+
     </script>
+
 </body>
 </html>
