@@ -3,7 +3,7 @@
 
 ## Description
 
-In this lab you'll learn how to add styling to html tags.
+In this lab you'll learn how some JavaScripts basics. You'll select HTML elements in JavaScript, then add events to add functionality to the html page.
 
 
 ## Where to start
