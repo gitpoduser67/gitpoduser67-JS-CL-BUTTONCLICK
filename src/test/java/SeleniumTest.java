@@ -21,7 +21,7 @@ public class SeleniumTest {
 
         // Create a new ChromeDriver instance
         driver = new ChromeDriver();
-        File file = new File("ButtonClicker.html");
+        File file = new File("/workspace/gitpoduser67-JS-CL-BUTTONCLICK/ButtonClicker.html");
         // Open the HTML file
         driver.get(file.getAbsolutePath());
     }
