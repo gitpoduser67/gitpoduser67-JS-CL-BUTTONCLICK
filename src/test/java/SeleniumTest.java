@@ -28,6 +28,7 @@ public class SeleniumTest {
     @Test
     public void testButton1() {
         // check the initial state of the text:
+        System.out.println("driver..",driver);
         WebElement displayElement = driver.findElement(By.id("text1"));
         assertEquals("click the button ...", displayElement.getText());
 
