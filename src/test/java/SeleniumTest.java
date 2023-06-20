@@ -26,7 +26,7 @@ public class SeleniumTest {
         driver = new ChromeDriver(ops);
         File file = new File("/workspace/gitpoduser67-JS-CL-BUTTONCLICK/ButtonClicker.html");
         // Open the HTML file
-        driver.get(file.getAbsolutePath());
+        driver.get("/workspace/gitpoduser67-JS-CL-BUTTONCLICK/ButtonClicker.html");
     }
     @Test
     public void testButton1() {
