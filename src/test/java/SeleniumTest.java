@@ -9,6 +9,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 
 public class SeleniumTest {
 
@@ -19,8 +20,10 @@ public class SeleniumTest {
         // Set up ChromeDriver path
         System.setProperty("webdriver.chrome.driver", "./chromedriver");
 
+        ChromeOptions ops = new ChromeOptions();
+        ops.addArguments("--remote-allow-origins=*");
         // Create a new ChromeDriver instance
-        driver = new ChromeDriver();
+        driver = new ChromeDriver(ops);
         File file = new File("/workspace/gitpoduser67-JS-CL-BUTTONCLICK/ButtonClicker.html");
         // Open the HTML file
         driver.get(file.getAbsolutePath());
