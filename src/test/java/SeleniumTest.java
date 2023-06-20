@@ -17,7 +17,7 @@ public class SeleniumTest {
     @Before
     public void setUp() {
         // Set up ChromeDriver path
-        System.setProperty("webdriver.chrome.driver", "./chromedriver/linux-116.0.5793.0/chromedriver-linux64/chromedriver");
+        System.setProperty("webdriver.chrome.driver", "./chromedriver");
 
         // Create a new ChromeDriver instance
         driver = new ChromeDriver();
