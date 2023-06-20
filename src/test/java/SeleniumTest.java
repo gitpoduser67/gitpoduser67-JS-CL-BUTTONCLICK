@@ -24,9 +24,9 @@ public class SeleniumTest {
         ops.addArguments("--remote-allow-origins=*");
         // Create a new ChromeDriver instance
         driver = new ChromeDriver(ops);
-        File file = new File("/workspace/gitpoduser67-JS-CL-BUTTONCLICK/ButtonClicker.html");
+        File file = new File("./ButtonClicker.html");
         // Open the HTML file
-        driver.get("/workspace/gitpoduser67-JS-CL-BUTTONCLICK/ButtonClicker.html");
+        driver.get(file.getAbsolutePath());
     }
     @Test
     public void testButton1() {
