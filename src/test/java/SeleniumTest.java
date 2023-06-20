@@ -18,13 +18,13 @@ public class SeleniumTest {
     @Before
     public void setUp() {
         // Set up ChromeDriver path
-        System.setProperty("webdriver.chrome.driver", "./chromedriver");
+        System.setProperty("webdriver.chrome.driver", "./chromedriver.exe");
 
         ChromeOptions ops = new ChromeOptions();
         ops.addArguments("--remote-allow-origins=*");
         // Create a new ChromeDriver instance
         driver = new ChromeDriver(ops);
-        File file = new File("./ButtonClicker.html");
+        File file = new File("ButtonClicker.html");
         // Open the HTML file
         driver.get(file.getAbsolutePath());
     }
